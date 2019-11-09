@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".Registration_page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20sp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/ic_launcher_peslogo" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="20dp"
+                android:text="Please Registre Here"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:text="* Marked Fields are Compulsary"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="First Name*"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/background_light"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/firstnamenotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Middle Name"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/middlename"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Middle Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name*"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lastnamenotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-mail*"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/emailregistration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/emailnotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password*(atleast 1 alphabet and 1 number ; minimum 6 character)"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/passwordregistration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/passwordnotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password*"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/confirmpassregis"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/cnfrmpswdnotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age*"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/ageregistration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:id="@+id/agenotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender*"
+                android:textColor="#846c24" />
+
+            <RadioGroup
+                android:id="@+id/gendergp"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:onClick="maleclick"
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="190dp"
+                    android:onClick="femaleclick"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="0dp"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/gendernotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/adressregistration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/background_light"
+                android:hint="Address"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth*"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/dobregistration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/background_light"
+                android:hint="Date of Birth in DD/MM/YYYY Format"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/dobnotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PUC Performance*"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/pucperformance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/background_light"
+                android:hint="PUC Percent/CGPA"
+                android:inputType="number|numberSigned|numberDecimal" />
+
+            <RadioGroup
+                android:id="@+id/cgpaorpercentage"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/background_light"
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/percentage"
+                    android:onClick="percentclick"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Percentage" />
+
+                <RadioButton
+                    android:id="@+id/cgpa"
+                    android:layout_width="180dp"
+                    android:onClick="cgpaclick"
+                    android:layout_height="50dp"
+                    android:fitsSystemWindows="true"
+                    android:text="CGPA" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pucperformnotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PUC Name*"
+                android:textColor="#846c24" />
+
+            <EditText
+                android:id="@+id/pucnamereg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Name of PUC"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/pucnamenotemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/registrationbutton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/holo_green_dark"
+                android:onClick="registerhere"
+                android:text="Register" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

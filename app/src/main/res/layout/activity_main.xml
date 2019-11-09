@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher_backgroun"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/homeusername"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="209dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:editable="true"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:topLeftRadius="30dp" />
+
+    <EditText
+        android:id="@+id/homepassword"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernamenotemp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:shadowColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="293dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="loginnow"
+        android:text="Login"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginStart="32dp"
+        android:onClick="Registernow"
+        android:text="       New?          Register Here"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="Openguest"
+        android:layout_marginEnd="32dp"
+        android:text="              OR         Continue As Guest"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:onClick="databaseoptions"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_launcher_peslogo" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignStart="@+id/homeusername"
+        android:layout_alignTop="@+id/textView6"
+        android:checked="true"
+        android:elegantTextHeight="true"
+        android:ellipsize="start"
+        android:filterTouchesWhenObscured="false"
+        android:minHeight="8sp"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:saveEnabled="true"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Keep me logged in"
+        android:textAllCaps="false"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="124dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/homeusername"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:onClick="openfgpw"
+        android:text="Forgot password ?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/usernamenotemp"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/homeusername"
+        android:layout_below="@+id/homeusername"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/passwordnotemp"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/homeusername"
+        android:layout_below="@+id/homepassword"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/notmatched"
+        android:layout_width="292dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/homeusername"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="-157dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+</RelativeLayout>

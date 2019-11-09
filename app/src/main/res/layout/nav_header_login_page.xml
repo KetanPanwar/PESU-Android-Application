@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@android:color/background_light"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView8"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_launcher_peslogo" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="76dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="-6dp"
+        app:srcCompat="@drawable/ic_action_name" />
+
+    <TextView
+        android:id="@+id/namenav"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pucnamenav"
+        android:layout_centerVertical="true"
+        android:text="Name:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dobnav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pucnamenav"
+        android:layout_alignStart="@+id/namenav"
+        android:text="DOB"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/pucnamenav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailnav"
+        android:layout_alignStart="@+id/emailnav"
+        android:text="PUC Name:"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/emailnav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text="e-mail:"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

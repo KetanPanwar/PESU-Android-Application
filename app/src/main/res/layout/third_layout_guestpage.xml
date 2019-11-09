@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="123dp"
+        android:background="@android:color/darker_gray">
+
+        <EditText
+            android:id="@+id/emailprofile"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/contactprofile"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="73dp"
+            android:background="@android:color/background_light"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/updateprofilebtn"
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="?attr/colorControlActivated"
+            android:text="Update"
+            android:onClick="udateprofile"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/emailprofile"
+            android:layout_alignStart="@+id/emailprofile"
+            android:layout_marginBottom="-32dp"
+            android:text="Email ID"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/contactprofile"
+            android:layout_alignStart="@+id/emailprofile"
+            android:text="Contact No"
+            android:textColor="?attr/actionModeSplitBackground"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="128dp"
+            android:layout_height="124dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            app:srcCompat="@drawable/ic_action_name" />
+
+        <TextView
+            android:id="@+id/namprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/dobprofile"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dobprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="152dp"
+            android:layout_marginTop="57dp"
+            android:text="TextView"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/pucnprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dobprofile"
+            android:layout_below="@+id/dobprofile"
+            android:text="TextView"
+            android:textColor="@android:color/background_light" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/chngpswdprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@android:color/background_light"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:icon="@drawable/ic_menu_share"
+        android:text="Change Password"
+        android:onClick="chngpswdprofile"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/logoutprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:icon="@drawable/ic_menu_share"
+        android:text="Logout"
+        android:onClick="logoutfromprofile"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false" />
+</RelativeLayout>

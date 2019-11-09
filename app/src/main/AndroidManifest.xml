@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cwc.loginapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_iconformyapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_iconformyapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Registration_page"
+            android:label="Registration Page"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Welcome_page">
+            android:theme="@style/AppTheme"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Guest_page"
+            android:label="@string/title_activity_guest_page"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".Forgot_Password_Page" />
+        <activity
+            android:name=".Login_page"
+            android:label="@string/title_activity_login_page"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".DisplayRegistrationDetails"
+            android:label="Details of Registered Students"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DatabaseOptions" />
+        <activity android:name=".DatabaseOptionsHome" />
+        <activity android:name=".SearchPage"></activity>
+    </application>
+
+</manifest>
